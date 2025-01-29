@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Akari design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="assets/css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- ヘッダー -->
+   <header>
+    <!-- ロゴ -->
+     <h2 id="header-logo">
+       <a href="index.html">Akari design</a>
+     </h2>
+     <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="index.html#skill">Skill</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- スマホ用メニューボタン -->
+      <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+        <img src="assets/img/bt-menu-sp.png" alt="ナビゲーションを開く">
+      </button>
+     <!-- スマホ用ナビゲーション -->
+     <div id="nav-sp">
+       <div id="nav-pc-header">
+         <!-- ロゴ -->
+         <h2 id="header-logo-sp">
+          <a href="index.html">Akari design</a>
+         </h2>
+        <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+          <img src="assets/img/bt-close.png" alt="ナビゲーションを閉じる">
+        </button>
+       </div>
+       <nav>
+         <ul>  
+           <li><a class="menu-sp" href="index.html#about-section" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a></li>
+           <li><a class="menu-sp" href="works.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Works</a></li>    
+           <li><a class="menu-sp" href="index.html#skill-section" onclick="document.getElementById('nav-sp').style.display = 'none'">Skill</a></li>     
+           <li><a class="menu-sp" id="menu-sp-bottom" href="index.html#contact-section" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a></li>   
+         </ul>
+       </nav>
+     </div>
+   </header>
+  <!-- ヘッダー -->
+
+<main>
+  <!-- works一覧ページ -->
+  <section class="works-page-section">
+   <div class="works-page-title">
+      <h3>
+        Works
+      </h3>
+      <p class="works-page-jptitle">
+        制作したもの
+      </p>
+    </div>
+    <div id="works-list">
+      <div id="works-1">
+        <a class="works-item" href="works-1.html">
+          <img src="assets/img/works/works1.png" alt="works1" />
+          <div class="works-description">
+            <p class="works-name">コーポレートサイト</p>
+            <p class="works-info">HTML/CSS/JavaScript/jQuery/レスポンシブ対応</p>
+            <p class="info-name">サイトの目的</p>
+            <p class="works-info">企業紹介と問い合わせ窓口</p>
+            <p class="info-name">デザインについて</p>
+            <p class="works-info">企業様のブランドカラーを基調としたサイトデザインをさせていただきました。使用カラーも4色（青・白・黒・グレー）のみとし、サイト全体の統一感を出させていただきました。<br>
+              グローバルナビゲーション（上部メニュー）を押したときの自動スクロール処理。また、お問い合わせフォームは企業様のメールへ送信される処理を実装しております。
+            </p>
+            <p class="info-name">コーディングについて</p>
+            <p class="works-info">PCのWebサイト制作はもちろんのこと、スマートフォンでも見やすくするためレスポンシブ対応を施しております。</p>
+          </div>
+        </a>  
+      </div>
+
+      <div id="works-2">
+        <a class="works-item" href="works-2.html">
+          <img src="assets/img/works/works2.png" alt="works2" />
+          <div class="works-description">
+            <p class="works-name">美容室のHP</p>
+            <p class="works-info">WordPress</p>
+            <p class="info-name">サイトの目的</p>
+            <p class="works-info">店舗の認知と集客</p>
+            <p class="info-name">デザインについて</p>
+            <p class="works-info">20~30代の女性のお客様が多い店舗のため、お客様の層に最適な画像素材を使用しております。</p>
+            <p class="info-name">コーディングについて</p>
+            <p class="works-info">トップ画面での画像スライド、口コミ情報の表示、GoogleMapでの店舗所在地の表示、お問い合わせフォームなどを実装させていただいております。</p>  
+          </div>
+        </a>
+      </div>
+
+      <div id="works-3">
+        <a class="works-item" href="works-3.html">
+          <img src="assets/img/works/works3.png" alt="works3" />
+          <div class="works-description">
+            <p class="works-name">大学のHP</p>
+            <p class="works-info">WordPress/PHP</p>
+            <p class="info-name">サイトの目的</p>
+            <p class="works-info">大学の紹介</p>
+            <p class="info-name">デザインについて</p>
+            <p class="works-info">同じようなデザインで学校機関や企業様のHPを作成することが可能です。</p>
+            <p class="info-name">コーディングについて</p>
+            <p class="works-info">ブログのようにコンテンツを投稿できる機能を取り揃えています。またTwitterのフィードをサイト上に表示させることも可能です。</p>  
+          </div>
+        </a>
+      </div>
+
+      <div id="works-4">
+        <a class="works-item" href="works-4.html">
+          <img src="assets/img/works/works4-IndividualPage-pc-336×280.png" alt="works4" />
+          <div class="works-description">
+            <p class="works-name">チョコレート菓子のバナー</p>
+            <p class="works-info">Photoshop</p>
+            <p class="info-name">サイトの目的</p>
+            <p class="works-info">新商品の宣伝</p>
+            <p class="info-name">デザインについて</p>
+            <p class="works-info">20代女性・OLをターゲットに、「仕事から帰宅後のリラックスタイムに食べてほしい」「ちょっとだけリッチな感じのチョコレート」といったイメージをもとに、高級ある落ち着<br>いた印象を感じられる配色、フォントでデザインしました。</p>  
+          </div>
+        </a>
+      </div>
+
+      <div id="works-5">
+        <a class="works-item" href="works-5.html">
+          <img src="assets/img/works/works5.png" alt="works5" />
+          <div class="works-description">
+            <p class="works-name">スイーツ専門店のLP</p>
+            <p class="works-info">Photoshop</p>
+            <p class="info-name">サイトの目的</p>
+            <p class="works-info">店舗の認知と集客</p>
+            <p class="info-name">デザインについて</p>
+            <p class="works-info">メインビジュアルはLPが表示されたときに閲覧者の目に留まるよう、ユーザーの目を引く目立つデザインにしています。</p>  
+          </div>
+        </a>
+      </div>
+
+      <div id="works-6">
+        <a class="works-item" href="works-6.html">
+          <img src="assets/img/works/works6.png" alt="works6" />
+          <div class="works-description">
+            <p class="works-name">ITスクールのバナー</p>
+            <p class="works-info">Figma</p>
+            <p class="info-name">サイトの目的</p>
+            <p class="works-info">お客様の自社メディアサイトでの使用。また広告での使用。</p>
+            <p class="info-name">デザインについて</p>
+            <p class="works-info">メインターゲットが女性であることを考慮し、配色をさせていただきました。</p>  
+          </div>
+        </a>
+      </div>
+
+      <div id="works-7">
+        <a class="works-item" href="works-7.html">
+          <img src="assets/img/works/works7.png" alt="works7" />
+          <div class="works-description">
+            <p class="works-name">アウトドアフェスティバルのバナー</p>
+            <p class="works-info">Figma</p>
+            <p class="info-name">サイトの目的</p>
+            <p class="works-info">アウトドアイベントの宣伝、集客</p>
+            <p class="info-name">デザインについて</p>
+            <p class="works-info">
+              クライアント様からのご要望にあった、「秋の行楽シーズンにキャンプにいきたくなるようなイメージ」を考慮した配色をデザインしました。<br>
+              また、「家族で行っても楽しめるイベント」であることが伝わるように、家族連れの写真やアクティビティにの一部を写真としてデザインしました。
+            </p>  
+          </div>
+        </a>
+      </div>
+
+      <div id="works-8">
+        <a class="works-item" href="works-8.html">
+          <img src="assets/img/works/works8.png" alt="works8" />
+          <div class="works-description">
+            <p class="works-name">化粧品のLP</p>
+            <p class="works-info">Figma</p>
+            <p class="info-name">サイトの目的</p>
+            <p class="works-info">オーガニックコスメブランドの商品販促、ブランドの認知向上</p>
+            <p class="info-name">デザインについて</p>
+            <p class="works-info">20~50代の女性をターゲットとしていることから、ナチュラル、オーガニック、高級感あるデザインを制作しました。</p>  
+          </div>
+        </a>
+      </div>
+
+      <div id="works-9">
+        <a class="works-item" href="works-9.html">
+          <img src="assets/img/works/works9.png" alt="works9" />
+          <div class="works-description">
+            <p class="works-name">家具店のECサイト</p>
+            <p class="works-info">Figma</p>
+            <p class="info-name">サイトの目的</p>
+            <p class="works-info">オンラインでの商品販売</p>
+            <p class="info-name">デザインについて</p>
+            <p class="works-info">
+              訪問者がサイトを使いやすいようなレイアウトや、直感的に操作しやすいようなボタンデザインを意識して制作しました。<br>
+              商品がユーザーの目に留まってからカートに入れて決済するまでの一連の流れで、ユーザーが迷わないように簡潔でわかりやすいインターフェースをデザインしました。
+            </p>  
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="bt-back">
+      <a href="index.html">
+        <img src="assets/img/bt-back.png" alt="戻る">
+      </a>
+    </div>  
+  </section>
+  <!-- works一覧ページ -->
+</main>
+
+
+  <!-- フッター -->
+  <footer>
+    <div id="footer-link">
+      <a href="index.html">About</a>
+      <a href="works.html">Works</a>
+      <a href="index.html#skill">Skill</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div id="bt-pagetop-pc">
+      <a href="works.html">
+        <img src="assets/img/bt_Page Top_pc.png" alt="Topに戻る">
+      </a>  
+    </div>
+    <!-- スマホ用page-topボタン -->
+    <div id="bt-pagetop-sp">
+      <a href="index.html">
+        <img src="assets/img/bt_Page Top_sp.png" alt="トップに戻る">
+      </a>
+    </div>
+   </footer>
+  <!-- フッター -->     
+</body>
+</html>
