@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Akari design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="assets/css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- ヘッダー -->
+   <header>
+    <!-- ロゴ -->
+     <h2 id="header-logo">
+       <a href="index.html">Akari design</a>
+     </h2>
+     <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="index.html#skill">Skill</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- スマホ用メニューボタン -->
+      <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+        <img src="assets/img/bt-menu-sp.png" alt="ナビゲーションを開く">
+      </button>
+     <!-- スマホ用ナビゲーション -->
+     <div id="nav-sp">
+       <div id="nav-pc-header">
+         <!-- ロゴ -->
+         <h2 id="header-logo-sp">
+          <a href="index.html">Akari design</a>
+         </h2>
+        <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+          <img src="assets/img/bt-close.png" alt="ナビゲーションを閉じる">
+        </button>
+       </div>
+       <nav>
+         <ul>  
+           <li><a class="menu-sp" href="index.html#about-section" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a></li>
+           <li><a class="menu-sp" href="works.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Works</a></li>    
+           <li><a class="menu-sp" href="index.html#skill-section" onclick="document.getElementById('nav-sp').style.display = 'none'">Skill</a></li>     
+           <li><a class="menu-sp" id="menu-sp-bottom" href="index.html#contact-section" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a></li>   
+         </ul>
+       </nav>
+     </div>
+   </header>
+  <!-- ヘッダー -->
+
+<main>
+  <section class="works-indivisual">
+      <div class="works-indivisual-title">
+        <h3>
+          Works
+        </h3>
+        <p class="works-page-jptitle">
+          制作したもの
+        </p>
+      </div>
+      <div id="works-indivisual-8">
+        <img src="assets/img/works/works8-IndividualPage-pc.png" alt="works8" />
+        <div class="works-description">
+          <p class="works-name">化粧品のLP</p>
+          <p class="works-info">Figma</p>
+          <p class="info-name">サイトの目的</p>
+          <p class="works-info">オーガニックコスメブランドの商品販促、ブランドの認知向上</p>
+          <p class="info-name">デザインについて</p>
+          <p class="works-info">20~50代の女性をターゲットとしていることから、ナチュラル、オーガニック、高級感あるデザインを制作しました。</p>  
+        </div>
+        <div class="bt-back">
+          <a href="works.html#works-8">
+            <img src="assets/img/bt-back.png" alt="戻る">
+          </a>
+        </div>  
+      </div>
+    </section>
+</main>
+
+  <!-- フッター -->
+  <footer>
+    <div id="footer-link">
+      <a href="index.html">About</a>
+      <a href="works.html">Works</a>
+      <a href="index.html#skill">Skill</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div id="bt-pagetop-pc">
+      <a href="#">
+        <picture>
+          <source media="(min-width: 768px)" srcset="assets/img/bt_Page_Top_pc.png">
+          <img src="assets/img/bt_Page_Top_sp.png" alt="">
+        </picture>
+      </a>
+    </div>
+   </footer>
+  <!-- フッター -->     
+</body>
+</html>
