@@ -253,7 +253,7 @@ header {
 #about-section > img {
   width: 28%;
   height: auto;
-  margin-top: 7%;
+  margin-top: 10%;
   -o-object-fit: contain;
      object-fit: contain;
   height: -moz-fit-content;
@@ -261,7 +261,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   #about-section > img {
-    width: 80%;
+    width: 75%;
     display: block;
     margin: 0 auto;
   }
@@ -279,7 +279,7 @@ header {
 @media screen and (max-width: 768px) {
   #about-container {
     width: 100%;
-    padding: 10px 20px;
+    padding: 30px;
     margin: 0 auto;
   }
 }
@@ -603,7 +603,7 @@ footer {
   .works-description > .works-info {
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 }
 
@@ -631,8 +631,34 @@ footer {
   }
 }
 
+#works-indivisual-2 {
+  padding: 0 17.3%;
+}
+@media screen and (max-width: 768px) {
+  #works-indivisual-2 {
+    padding: 0 6.9%;
+  }
+}
+#works-indivisual-2 > img {
+  max-width: 100%;
+  min-width: 75%;
+}
+
+#works-indivisual-3 {
+  padding: 0 17.3%;
+}
+@media screen and (max-width: 768px) {
+  #works-indivisual-3 {
+    padding: 0 6.9%;
+  }
+}
+#works-indivisual-3 > img {
+  max-width: 100%;
+  min-width: 75%;
+}
+
 #works-indivisual-5 {
-  padding: 0 13.2%;
+  padding: 0 17.3%;
 }
 @media screen and (max-width: 768px) {
   #works-indivisual-5 {
@@ -645,7 +671,7 @@ footer {
 }
 
 #works-indivisual-6 {
-  padding: 0 9.9%;
+  padding: 0 17.3%;
 }
 @media screen and (max-width: 768px) {
   #works-indivisual-6 {
@@ -658,7 +684,12 @@ footer {
 }
 
 #works-indivisual-7 {
-  padding: 0 6.6%;
+  padding: 0 17.3%;
+}
+@media screen and (max-width: 768px) {
+  #works-indivisual-7 {
+    padding: 0 6.9%;
+  }
 }
 #works-indivisual-7 > img {
   max-width: 100%;
@@ -666,7 +697,12 @@ footer {
 }
 
 #works-indivisual-8 {
-  padding: 0 6.6%;
+  padding: 0 17.3%;
+}
+@media screen and (max-width: 768px) {
+  #works-indivisual-8 {
+    padding: 0 6.9%;
+  }
 }
 #works-indivisual-8 > img {
   max-width: 100%;
@@ -674,7 +710,7 @@ footer {
 }
 
 #works-indivisual-9 {
-  padding: 0 13.2%;
+  padding: 0 17.3%;
 }
 @media screen and (max-width: 768px) {
   #works-indivisual-9 {
