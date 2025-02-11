@@ -69,16 +69,20 @@ body{
 
 
 // ヘッダーここから
-header{
+header {
   display: flex;
   justify-content: space-between;
   height: 55px;
   background-color: #0A3F38;
   padding: 0 17.3%;
-  
+
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 10px 6.9%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: auto;
   }
 }
 
@@ -169,7 +173,7 @@ header{
     justify-content: space-between;
     width: 100%;
     background-color: #D7A770;
-    padding: 10px 7.1%;
+    padding: 10px 6.9%;
     border-bottom-width: 1px;
     border-bottom-color: #D7A770;
     border-bottom-style: solid;  
@@ -646,7 +650,7 @@ footer{
 }
 
 #works-list > div > a > img{
-  max-width: 100%;
+  width: 100%;
   min-width: 75%;
 }
 
@@ -663,6 +667,8 @@ footer{
 
   >.info-name{
     font-weight: bold;
+    display: flex;
+    align-items: center;
     &::before{
       content: url("../img/works/line.png");
       margin-right: 0.5%;
@@ -696,8 +702,9 @@ footer{
 
   // スマホ用スタイル
   @media screen and (max-width: 768px){
-    padding-left: 6.9%;     
- }
+    padding-left: 6.9%;
+    padding-top: 105px;
+  }
 }
 
 // 戻るボタン

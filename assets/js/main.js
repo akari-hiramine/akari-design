@@ -1,13 +1,12 @@
-const header = document.getElementsByClassName('header');
+const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
   const scrollValue = document.scrollingElement.scrollTop;
 
-  if(scrollValue >=300){
-    header.style.display = inline;
-  }
-
-  else{
+  if (scrollValue >= 300) {
+    header.style.display = 'flex';
+  } else{
     header.style.display = 'none';
   }
+
 });
