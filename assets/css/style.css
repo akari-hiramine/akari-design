@@ -66,17 +66,17 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  height: 55px;
   background-color: #0A3F38;
   padding: 0 17.3%;
+  height: auto;
 }
 @media screen and (max-width: 768px) {
   header {
     padding: 10px 6.9%;
     position: fixed;
     width: 100%;
-    z-index: 10;
     height: auto;
+    z-index: 10;
   }
 }
 
@@ -85,6 +85,14 @@ header {
   font-family: "LostaMasta";
   color: #D7A770;
   align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  #header-logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 #nav-pc {
@@ -109,9 +117,6 @@ header {
   padding-left: 20px;
   color: #D7A770;
 }
-#nav-pc a:hover {
-  text-decoration: underline;
-}
 
 /* スマホ用ナビを非表示 */
 #nav-sp,
@@ -135,7 +140,6 @@ header {
     top: 0;
     width: 100%;
     display: none;
-    z-index: 100;
   }
   #nav-sp > nav > ul > li {
     padding: 20px 35.6% 20px 7.1%;
@@ -163,6 +167,8 @@ header {
     font-size: 36px;
     font-family: "LostaMasta";
     align-self: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 #mv-section {
@@ -181,7 +187,6 @@ header {
 #mv-section > img {
   width: 68.75%;
   height: auto;
-  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   #mv-section > img {
@@ -224,7 +229,6 @@ header {
   padding-left: 12.4338624339%;
   transform: rotate(-9.18deg);
   text-align: left;
-  z-index: 20;
   text-shadow: 0 0 6px rgb(248, 240, 224);
 }
 @media screen and (max-width: 768px) {
@@ -520,8 +524,8 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: #0A3F38;
-  padding: 0 17.3%;
-  height: 90px;
+  padding: 20px 17.3%;
+  height: auto;
 }
 @media screen and (max-width: 768px) {
   footer {
@@ -549,9 +553,6 @@ footer {
     padding-left: 0;
     padding-right: 15px;
   }
-}
-#footer-link > a:hover {
-  text-decoration: underline;
 }
 
 #bt-pagetop-pc {
@@ -662,6 +663,21 @@ footer {
 #works-indivisual-3 > img {
   max-width: 100%;
   min-width: 75%;
+}
+
+#works-indivisual-4 {
+  padding: 0 17.3%;
+}
+#works-indivisual-4 > img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #works-indivisual-4 {
+    padding: 0 6.9%;
+  }
+  #works-indivisual-4 > img {
+    max-width: 100%;
+  }
 }
 
 #works-indivisual-5 {

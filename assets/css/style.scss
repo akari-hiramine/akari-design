@@ -72,17 +72,17 @@ body{
 header {
   display: flex;
   justify-content: space-between;
-  height: 55px;
   background-color: #0A3F38;
   padding: 0 17.3%;
+  height: auto;
 
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 10px 6.9%;
     position: fixed;
     width: 100%;
-    z-index: 10;
     height: auto;
+    z-index: 10;
   }
 }
 
@@ -92,6 +92,14 @@ header {
   font-family: "LostaMasta";
   color: #D7A770;
   align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  // スマホ用スタイル
+  @media screen and (max-width: 768px){
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 // ナビゲーションのレイアウト
@@ -119,9 +127,6 @@ header {
     padding-left: 20px;
     color: #D7A770;
    }
-   a:hover{
-    text-decoration: underline;
-  }
 }
 
 /* スマホ用ナビを非表示 */
@@ -150,7 +155,6 @@ header {
     top: 0;
     width: 100%;
     display: none;
-    z-index: 100;  
 
     // メニューリスト
     > nav >ul >li{
@@ -184,6 +188,8 @@ header {
     font-size: 36px;
     font-family: "LostaMasta";
     align-self: center;  
+    padding-top: 5px;
+    padding-bottom: 5px;  
   }
 }
 // ヘッダーここまで
@@ -212,7 +218,6 @@ header {
     height: auto;
     // position: absolute;
     // right: 261px;
-    z-index: 10;
 
     // スマホ用スタイル
     @media screen and (max-width: 768px){
@@ -259,7 +264,6 @@ header {
   padding-left: calc(188 / 1512 * 100%);
   transform: rotate(-9.18deg);
   text-align: left;
-  z-index: 20;
   text-shadow: 0 0 6px rgb(248, 240, 224);
 
   // スマホ用スタイル
@@ -582,10 +586,9 @@ header {
 footer{
   display: flex;
   justify-content: space-between;
-  // height: 55px;
   background-color: #0A3F38;
-  padding: 0 17.3%;
-  height: 90px;
+  padding: 20px 17.3%;
+  height: auto;
 
   // スマホ用スタイル
   @media screen and (max-width: 768px){
@@ -604,26 +607,19 @@ footer{
   @media screen and (max-width: 768px){
     font-size: 12px;
   }
-
   > a{
     padding-left: 20px;
-
     // スマホ用スタイル
     @media screen and (max-width: 768px){
       padding-left: 0;
       padding-right: 15px;    
     }    
   }
-  > a:hover{
-    text-decoration: underline;
-  }
 }
 
+// 「TOPに戻る」ボタン
 #bt-pagetop-pc{
   align-self: flex-end;
-  // position: fixed;
-  // right: 17.3%;
-  // bottom: 0;
 }
 // footerここまで
 
@@ -745,6 +741,22 @@ footer{
     min-width: 75%;
   }
 
+}
+
+#works-indivisual-4{
+  padding: 0 17.3%;
+  > img{
+    max-width: 100%;
+  }
+
+  // スマホ用スタイル
+  @media screen and (max-width: 768px){
+    padding: 0 6.9%;  
+
+    > img{
+      max-width: 100%;
+    }
+  }
 }
 
 #works-indivisual-5{
