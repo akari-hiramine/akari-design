@@ -338,6 +338,7 @@ header {
 #about-text{
   margin-top: 50px;
   line-height: 1.6;
+  text-align: justify;
 }
 // aboutここまで
 
@@ -386,6 +387,7 @@ header {
   font-weight: bold;
   color: #2D0100;
   margin-top: 5px;
+  margin-bottom: 10px;
 
   // スマホ用スタイル
   @media screen and (max-width: 768px){
@@ -504,6 +506,11 @@ header {
   background-color: #F8F0E0;
   padding: 0 30% 5% 30%;  
 
+  > iframe{
+    width: 100%;
+    min-height: 1000px;
+  }
+
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 0 10% 75px 10%;
@@ -523,13 +530,26 @@ header {
 #contact-text{
   text-align: center;
   color: #0A3F38;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+  
 
   @media screen and (max-width: 768px){
     padding-bottom: 75px;
     font-size: 12px;
   }
 }
+
+// PCの時
+#contact-text .sp-br {
+  display: none;
+
+  // スマホの時
+  @media screen and (max-width: 768px){
+     display: block;
+   }
+}
+
 
 // 問い合わせフォーム
 .contact-form{
@@ -667,13 +687,14 @@ footer{
     align-items: center;
     &::before{
       content: url("../img/works/line.png");
-      margin-right: 0.5%;
+      margin-right: 5px;
     }
   }
 
   > .works-info{
     padding-top: 5px;
     padding-bottom: 25px;
+    line-height: 1.6;
 
     // スマホ用スタイル
     @media screen and (max-width: 768px){
@@ -690,11 +711,12 @@ footer{
 // works個別ページここから
 .works-indivisual{
   background-color: #F8F0E0;
+  padding: 0 17.3%;
 }
 
 .works-indivisual-title{
   color: #0A3F38;
-  padding: 56px 17.3% 63px 17.3%;
+  padding: 56px 0 63px 0;
 
   // スマホ用スタイル
   @media screen and (max-width: 768px){
@@ -715,8 +737,6 @@ footer{
 }
 
 #works-indivisual-2{
-  padding: 0 17.3%;
-
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 0 6.9%;      
@@ -729,8 +749,6 @@ footer{
 }
 
 #works-indivisual-3{
-  padding: 0 17.3%;
-
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 0 6.9%;      
@@ -744,7 +762,6 @@ footer{
 }
 
 #works-indivisual-4{
-  padding: 0 17.3%;
   > img{
     max-width: 100%;
   }
@@ -760,8 +777,6 @@ footer{
 }
 
 #works-indivisual-5{
-  padding: 0 17.3%;
-
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 0 6.9%;      
@@ -774,8 +789,6 @@ footer{
 }
 
 #works-indivisual-6{
-  padding: 0 17.3%;
-
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 0 6.9%;      
@@ -788,8 +801,6 @@ footer{
 }
 
 #works-indivisual-7{
-  padding: 0 17.3%;
-
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 0 6.9%;      
@@ -802,8 +813,6 @@ footer{
 }
 
 #works-indivisual-8{
-  padding: 0 17.3%;
-
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 0 6.9%;      
@@ -816,8 +825,9 @@ footer{
 }
 
 #works-indivisual-9{
-  padding: 0 17.3%;
-
+  > img{
+    width: 100%;
+  }
   // スマホ用スタイル
   @media screen and (max-width: 768px){
     padding: 0 6.9%;      

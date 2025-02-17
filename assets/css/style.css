@@ -305,6 +305,7 @@ header {
 #about-text {
   margin-top: 50px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 #works-section {
@@ -346,6 +347,7 @@ header {
   font-weight: bold;
   color: #2D0100;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
   .works-name {
@@ -451,6 +453,10 @@ header {
   background-color: #F8F0E0;
   padding: 0 30% 5% 30%;
 }
+#contact-section > iframe {
+  width: 100%;
+  min-height: 1000px;
+}
 @media screen and (max-width: 768px) {
   #contact-section {
     padding: 0 10% 75px 10%;
@@ -469,12 +475,22 @@ header {
 #contact-text {
   text-align: center;
   color: #0A3F38;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  line-height: 1.6;
 }
 @media screen and (max-width: 768px) {
   #contact-text {
     padding-bottom: 75px;
     font-size: 12px;
+  }
+}
+
+#contact-text .sp-br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #contact-text .sp-br {
+    display: block;
   }
 }
 
@@ -600,11 +616,12 @@ footer {
 }
 .works-description > .info-name::before {
   content: url("../img/works/line.png");
-  margin-right: 0.5%;
+  margin-right: 5px;
 }
 .works-description > .works-info {
   padding-top: 5px;
   padding-bottom: 25px;
+  line-height: 1.6;
 }
 @media screen and (max-width: 768px) {
   .works-description > .works-info {
@@ -616,11 +633,12 @@ footer {
 
 .works-indivisual {
   background-color: #F8F0E0;
+  padding: 0 17.3%;
 }
 
 .works-indivisual-title {
   color: #0A3F38;
-  padding: 56px 17.3% 63px 17.3%;
+  padding: 56px 0 63px 0;
 }
 @media screen and (max-width: 768px) {
   .works-indivisual-title {
@@ -639,9 +657,6 @@ footer {
   }
 }
 
-#works-indivisual-2 {
-  padding: 0 17.3%;
-}
 @media screen and (max-width: 768px) {
   #works-indivisual-2 {
     padding: 0 6.9%;
@@ -652,9 +667,6 @@ footer {
   min-width: 75%;
 }
 
-#works-indivisual-3 {
-  padding: 0 17.3%;
-}
 @media screen and (max-width: 768px) {
   #works-indivisual-3 {
     padding: 0 6.9%;
@@ -665,9 +677,6 @@ footer {
   min-width: 75%;
 }
 
-#works-indivisual-4 {
-  padding: 0 17.3%;
-}
 #works-indivisual-4 > img {
   max-width: 100%;
 }
@@ -680,9 +689,6 @@ footer {
   }
 }
 
-#works-indivisual-5 {
-  padding: 0 17.3%;
-}
 @media screen and (max-width: 768px) {
   #works-indivisual-5 {
     padding: 0 6.9%;
@@ -693,9 +699,6 @@ footer {
   min-width: 75%;
 }
 
-#works-indivisual-6 {
-  padding: 0 17.3%;
-}
 @media screen and (max-width: 768px) {
   #works-indivisual-6 {
     padding: 0 6.9%;
@@ -706,9 +709,6 @@ footer {
   min-width: 75%;
 }
 
-#works-indivisual-7 {
-  padding: 0 17.3%;
-}
 @media screen and (max-width: 768px) {
   #works-indivisual-7 {
     padding: 0 6.9%;
@@ -719,9 +719,6 @@ footer {
   min-width: 75%;
 }
 
-#works-indivisual-8 {
-  padding: 0 17.3%;
-}
 @media screen and (max-width: 768px) {
   #works-indivisual-8 {
     padding: 0 6.9%;
@@ -732,8 +729,8 @@ footer {
   min-width: 75%;
 }
 
-#works-indivisual-9 {
-  padding: 0 17.3%;
+#works-indivisual-9 > img {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   #works-indivisual-9 {
