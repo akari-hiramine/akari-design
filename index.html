@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
   <title>Akari design</title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> 
+  <meta name="description" content="AkariDesignは心を動かすデザインで、あなたのビジョンを実現します。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="assets/css/reset.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <style>
+    img:not([alt]) {
+      border: 10px solid red;
+    }
+  </style>
+  
 </head>
 <body>
   <!-- ヘッダー -->
@@ -294,17 +301,23 @@
         </p>
       </div>
       <p id="contact-text">
-        制作の依頼・ご相談などお気軽にお問い合わせくださいませ。<br>下記フォームより、わかる範囲でご記入ください。必須項目は必ずご記入お願いします。
+        制作の依頼・ご相談などお気軽に<br class="sp-br">
+        お問い合わせくださいませ。<br>
+        下記フォームより、わかる範囲でご記入ください。<br>
+        必須項目は必ずご記入お願いします。
       </p>
 
+
+
+
       <!-- 問い合わせフォーム -->
-      <form class="contact-form">
+      <form action="https://docs.google.com/forms/u/0/d/11FHvGdv10kI9SMDOtWsz5Cqi19ypB3kifn6laJlm-6E/previewResponse" class="contact-form">
         <div class="form-list">
            <div class="contact-heading">
              <label class="contact-label">お名前<span class="contact-span">必須</span></label>
            </div>
            <div>
-             <input type="text" name="name" class="contact-textbox">
+             <input type="text" name="entry.1520292195" class="contact-textbox">
            </div>
         </div>
   
@@ -313,7 +326,7 @@
              <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
           </div>
           <div>
-            <input type="text" name="hurigana" class="contact-textbox">
+            <input type="text" name="entry.306603283" class="contact-textbox">
           </div>
         </div>
   
@@ -322,7 +335,7 @@
             <label class="contact-label">メールアドレス<span class="contact-span">必須</span></label>
           </div>
           <div>
-            <input type="text" name="email" class="contact-textbox">
+            <input type="text" name="entry.308390761" class="contact-textbox">
           </div>
         </div>
   
@@ -331,7 +344,7 @@
             <label class="contact-label">電話番号</label>
           </div>
           <div>
-            <input type="text" name="tel" class="contact-textbox">
+            <input type="text" name="entry.283208204" class="contact-textbox">
           </div>
         </div>
   
@@ -340,13 +353,18 @@
             <label class="contact-label">お問い合わせ内容<span class="contact-span">必須</span></label>
           </div>
           <div>
-            <textarea class="contact-textarea"  name="message"></textarea>
+            <textarea class="contact-textarea"  name="entry.1118538342"></textarea>
           </div>
         </div>
         <div id="bt-submit">
           <input type="image" src="assets/img/bt_send.png" alt="送信する">
         </div>
       </form> 
+      <script type="text/javascript">
+        var submitted = false;
+      </script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)  {window.location='thanks.html';}"></iframe>
+      <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8dZB7owjT08n9HugcVjM_N709iJiBemZ0--HqVxltYWzlbg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe> -->
     </section>
     <!-- contact -->     
   </main>
