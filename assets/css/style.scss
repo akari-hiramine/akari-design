@@ -839,3 +839,83 @@ footer{
   }
 }
 // works個別ページここまで
+
+
+// thanksページここから
+#thanks-title{
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 35px;
+  // タイトル「Thank You！」
+  >h2{
+    font-size: 48px;
+    font-family: "LostaMasta";
+    color: #0A3F38;
+    // スマホ用スタイル
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+      margin-left: 3%;
+    }
+
+    >span{
+      font-family: "Hiragino Mincho ProN";
+    }
+  }
+  // 「お問い合わせありがとうございました！」
+  >p{
+    font-size: 20px;
+    color: #0A3F38;
+    // スマホ用スタイル
+    @media screen and (max-width: 768px) {
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 16px;      
+    }
+  }
+}
+
+#thanks-message{
+  background-color: #D7A770;
+  color: #2D0100;
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-bottom: 330px;
+  padding: 50px 5%;
+  // スマホ用スタイル
+  @media screen and (max-width: 768px) {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 305px;
+    padding: 25px 10%;
+  }
+}
+
+// PC用「この度は...」
+#thanks-message-pc{
+  text-align: center;
+  margin-bottom: 45px;
+  line-height: 1.6;
+  // スマホ用スタイルの時は、非表示にする
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+// SP用「この度は...」
+#thanks-message-sp{
+  // PC用スタイルの時は、非表示にする
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    text-align: center;
+    margin-bottom: 45px;
+    line-height: 1.6;  
+  }
+}
+
+
+// 「戻る」ボタン
+#bt-back-thanks{
+  text-align: center;
+}
+// thanksページここまで
