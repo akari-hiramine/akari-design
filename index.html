@@ -15,50 +15,15 @@
       border: 10px solid red;
     }
   </style>
-  
+
+  <!-- jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>  
 </head>
+
 <body>
   <!-- ヘッダー -->
-  <header class="header">
-    <!-- ロゴ -->
-    <h2 id="header-logo">
-      <a href="index.html">Akari design</a>
-    </h2>
-    <!-- PC用ナビゲーション -->
-    <nav id="nav-pc">
-      <ul>
-        <li><a href="index.html#about-section">About</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="index.html#skill-section">Skill</a></li>
-        <li><a href="index.html#contact-section">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- スマホ用メニューボタン -->
-    <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
-      <img src="assets/img/bt-menu-sp.png" alt="ナビゲーションを開く">
-    </button>
-    <!-- スマホ用ナビゲーション -->
-    <div id="nav-sp">
-      <div id="nav-sp-header">
-        <!-- ロゴ -->
-        <h2 id="header-logo-sp">
-          <a href="index.html">Akari design</a>
-        </h2>
-        <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
-          <img src="assets/img/bt-close.png" alt="ナビゲーションを閉じる">
-        </button>
-      </div>
-      <!-- スマホ用メニューリスト -->
-      <nav>
-        <ul>  
-          <li><a class="menu-sp" href="index.html#about-section" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a></li>
-          <li><a class="menu-sp" href="works.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Works</a></li>    
-          <li><a class="menu-sp" href="index.html#skill-section" onclick="document.getElementById('nav-sp').style.display = 'none'">Skill</a></li>     
-          <li><a class="menu-sp" id="menu-sp-bottom" href="index.html#contact-section" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a></li>   
-        </ul>
-      </nav>
-    </div>
-  </header>
+   <header class="header">
+   </header>
   <!-- ヘッダー -->
 
   <main>
@@ -114,18 +79,21 @@
 
       <div id="works-container">
         <div id="works-top">
+          <!-- works1 -->
           <a href="kadai_tutorial_output/index.html">
             <img src="assets/img/works/works1-top.png" alt="works1" />
             <p class="works-name">コーポレートサイト</p>
             <p class="works-info">HTML/CSS/JavaScript/jQuery/レスポンシブ対応</p>
           </a>
 
+          <!-- works2 -->
           <a href="works-2.html">
             <img src="assets/img/works/works2-top.png" alt="works2" />
             <p class="works-name">美容室のHP</p>
             <p class="works-info">WordPress</p>
           </a>
 
+          <!-- works3 -->
           <a href="works-3.html">
             <img src="assets/img/works/works3-top.png" alt="works3" />
             <p class="works-name">大学のHP</p>
@@ -134,41 +102,47 @@
         </div>
 
         <div id="works-center">
+          <!-- works4 -->          
           <a href="works-4.html">
-            <img src="assets/img/works/works4-top.png" alt="works4" />
+            <img src="assets/img/works/works10-top.png" alt="works4" />
+            <p class="works-name">フォトスタジオのHP</p>
+            <p class="works-info">WordPress/PHP</p>
+          </a>
+   
+          <!-- works5 -->          
+          <a href="works-5.html">
+            <img src="assets/img/works/works4-top.png" alt="works5" />
             <p class="works-name">チョコレート菓子のバナー</p>
             <p class="works-info">Photoshop</p>
           </a>
-   
-          <a href="works-5.html">
-            <img src="assets/img/works/works5-top.png" alt="works5" />
+
+          <!-- works6 -->
+          <a href="works-6.html">
+            <img src="assets/img/works/works5-top.png" alt="works6" />
             <p class="works-name">スイーツ専門店のLP</p>
             <p class="works-info">Photoshop</p>
-          </a>
-
-          <a href="works-6.html">
-            <img src="assets/img/works/works6-top.png" alt="works6" />
-            <p class="works-name">ITスクールのバナー</p>
-            <p class="works-info">Figma</p>
           </a>   
         </div>
 
         <div id="works-bottom">
+          <!-- works7 -->
           <a href="works-7.html">
-            <img src="assets/img/works/works7-top.png" alt="works7" />
-            <p class="works-name">アウトドアフェスティバルのバナー</p>
+            <img src="assets/img/works/works6-top.png" alt="works7" />
+            <p class="works-name">ITスクールのバナー</p>
             <p class="works-info">Figma</p>
           </a>  
 
+          <!-- works8 -->
          <a href="works-8.html">
-            <img src="assets/img/works/works8-top.png" alt="works8" />
-            <p class="works-name">化粧品のLP</p>
+            <img src="assets/img/works/works7-top.png" alt="works8" />
+            <p class="works-name">アウトドアフェスティバルのバナー</p>
             <p class="works-info">Figma</p>
           </a>
       
+          <!-- works9 -->
           <a href="works-9.html">
-            <img src="assets/img/works/works9-top.png" alt="works9" />
-            <p class="works-name">家具店のECサイト</p>
+            <img src="assets/img/works/works8-top.png" alt="works9" />
+            <p class="works-name">化粧品のLP</p>
             <p class="works-info">Figma</p>
           </a>
         </div>
@@ -356,14 +330,13 @@
             <textarea class="contact-textarea"  name="entry.1118538342"></textarea>
           </div>
         </div>
-        <div id="bt-submit">
           <input type="image" src="assets/img/bt_send.png" alt="送信する">
         </div>
       </form> 
       <script type="text/javascript">
         var submitted = false;
       </script>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)  {window.location='index.html';}"></iframe>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)  {window.location='thanks.html';}"></iframe>
       <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8dZB7owjT08n9HugcVjM_N709iJiBemZ0--HqVxltYWzlbg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe> -->
     </section>
     <!-- contact -->     
@@ -371,21 +344,6 @@
 
   <!-- フッター -->
   <footer>
-    <div id="footer-link">
-      <a href="index.html#about-section">About</a>
-      <a href="works.html">Works</a>
-      <a href="index.html#skill-section">Skill</a>
-      <a href="index.html#contact-section">Contact</a>
-    </div>
-    <div id="bt-pagetop-pc">
-      <a href="#">
-        <picture>
-          <source media="(min-width: 768px)" srcset="assets/img/bt_PageTop_pc.png">
-          <img src="assets/img/bt_PageTop_sp.png" alt="">
-        </picture>
-      </a>
-    </div>
-
   </footer>
   <!-- フッター -->
 
@@ -394,4 +352,9 @@
   <!-- JSファイルを読み込む -->
   <script src="assets/js/main.js"></script>
 </body>
+
+<script>
+ $('header').load('includes/header.html');
+ $('footer').load('inclides/footer.html');
+</script>
 </html>
